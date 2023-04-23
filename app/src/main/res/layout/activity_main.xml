@@ -44,20 +44,19 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edAlcool"
+            android:id="@+id/precoGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Preço da gasolina"
+            android:hint="Preço Gasolina"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/edGasolina"
+            android:id="@+id/editTextNumberDecimal2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="alcool"
+            android:hint="Preço Álcool"
             android:inputType="numberDecimal" />
 
         <Switch

@@ -1,5 +1,6 @@
 package com.example.alcoolougasolina
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -12,8 +13,8 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     var buttonState: Boolean = false;
-    val ALCOOL = "Alcool vale a pena"
-    val GASOLINA = "Gasolina vale a pena"
+    private var _ALCOOL = "Alcool vale a pena"
+    private var _GASOLINA = "Gasolina vale a pena"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 val divisao = alcool / gasolina
                 Log.d("PDM23", "percentual testado $percentual")
                 Log.d("PDM23", "Divisão entre alcool e gasolina $divisao")
-                resultado.text = if (percentual > divisao) ALCOOL else GASOLINA
+                resultado.text = if (percentual > divisao) _ALCOOL else _GASOLINA
             } catch (e: java.lang.NumberFormatException) {
                 // handler
                 Log.e("PDM23", "Formato invalido");
@@ -76,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         }
             super.onSaveInstanceState(outState, outPersistentState)
     }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+
+    }
+
     override fun onResume() {
         super.onResume()
         Log.d("PDM23", "No onResume,")

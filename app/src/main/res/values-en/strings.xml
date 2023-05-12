@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">on which fuel?</string>
+    <string name="hello">Relou</string>
+    <string name="gasolina_ou_lcool">Gas or alcohol?</string>
+    <string name="calcular">Calculate</string>
+    <string name="resultado">Results</string>
+    <string name="pre_o_gasolina">Gasoline Price</string>
+    <string name="uma_bomba_de_gasolina_ilustrando_o_app">A gas pump illustrating the app</string>
+    <string name="pre_o_lcool">Alcohol price</string>
+    <string name="alcool_vale">Alcool is more worth it</string>
+</resources>

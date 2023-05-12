@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:contentDescription="uma bomba de gasolina ilustrando o app"
+            android:contentDescription="@string/uma_bomba_de_gasolina_ilustrando_o_app"
             android:paddingVertical="10dp"
             android:textAlignment="center"
             app:srcCompat="@mipmap/ic_launcher_foreground" />
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Gasolina ou Álcool?"
+            android:text="@string/gasolina_ou_lcool"
             android:textAlignment="center"
             android:textColor="?colorPrimaryVariant"
             android:textSize="25sp"
@@ -50,16 +50,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Preço Gasolina"
-            android:inputType="numberDecimal" />
+            android:hint="@string/pre_o_gasolina"
+            android:inputType="numberDecimal"
+            android:autofillHints="4.00" />
 
         <EditText
             android:id="@+id/precoAlcool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Preço Álcool"
-            android:inputType="numberDecimal" />
+            android:hint="@string/pre_o_lcool"
+            android:inputType="numberDecimal"
+            android:autofillHints="4.00" />
 
         <Switch
             android:id="@+id/swPercentual"
@@ -76,7 +78,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#CB584C"
-            android:text="Calcular" />
+            android:text="@string/calcular" />
 
         <TextView
             android:id="@+id/resultado"
@@ -84,7 +86,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:textColor="?colorPrimaryVariant"
-            android:text="Resultado"
+            android:text="@string/resultado"
             android:textAlignment="center"
             android:textSize="24sp" />
 

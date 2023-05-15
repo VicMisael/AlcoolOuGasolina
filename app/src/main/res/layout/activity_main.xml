@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87C4CB"
-    android:backgroundTint="#87C4CB"
+    android:background="@color/material_dynamic_primary10"
+    android:backgroundTint="@color/material_dynamic_primary10"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -31,7 +31,9 @@
             android:contentDescription="@string/uma_bomba_de_gasolina_ilustrando_o_app"
             android:paddingVertical="10dp"
             android:textAlignment="center"
-            app:srcCompat="@mipmap/ic_launcher_foreground" />
+            android:background="@color/blue"
+            app:srcCompat="@mipmap/ic_launcher_foreground"
+            />
 
         <TextView
             android:id="@+id/titulo"
@@ -48,7 +50,7 @@
         <EditText
             android:id="@+id/precoGasolina"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/pre_o_gasolina"
             android:inputType="numberDecimal"
@@ -57,7 +59,7 @@
         <EditText
             android:id="@+id/precoAlcool"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/pre_o_lcool"
             android:inputType="numberDecimal"
@@ -66,7 +68,7 @@
         <Switch
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="right"
             android:layout_marginHorizontal="20dp"
             android:text="75%" />

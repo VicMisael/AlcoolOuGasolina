@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
-
+        super.onConfigurationChanged(newConfig)
     }
 
     override fun onResume() {
